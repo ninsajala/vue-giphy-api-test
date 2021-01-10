@@ -24,6 +24,7 @@ export default {
 .oneGif img {
   max-width: 300px;
   max-height: 300px;
+  box-shadow: 2px 2px 10px black;
 }
 
 .oneGif {
@@ -32,5 +33,7 @@ export default {
   margin: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin: 1%;
 }
 </style>

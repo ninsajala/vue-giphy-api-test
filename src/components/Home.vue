@@ -40,4 +40,32 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input {
+  border: none;
+  width: 300px;
+  height: 20px;
+  font-size: 20px;
+  padding: 4px;
+  margin: 1%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px black;
+}
+
+.search button {
+  border: none;
+  height: 30px;
+  font-size: 18px;
+  padding: 5px;
+  margin: 0.5%;
+  border-radius: 10px;
+  background-color: rgb(28, 196, 187);
+  box-shadow: 2px 2px 5px black;
+}
+</style>
