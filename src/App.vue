@@ -3,7 +3,8 @@
     <h1>Vue Giphy Genarator</h1>
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/random">Random</router-link>
+      <router-link to="/random">Random</router-link> |
+      <router-link to="/trending">Trending</router-link>
     </nav>
   </header>
 

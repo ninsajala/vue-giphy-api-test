@@ -49,6 +49,7 @@ export default {
 
 .search input {
   border: none;
+  outline: none;
   width: 300px;
   height: 20px;
   font-size: 20px;
@@ -60,6 +61,7 @@ export default {
 
 .search button {
   border: none;
+  outline: none;
   height: 30px;
   font-size: 18px;
   padding: 5px;
