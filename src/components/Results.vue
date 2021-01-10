@@ -22,11 +22,15 @@ export default {
 }
 
 .oneGif img {
-  width: 300px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .oneGif {
   height: 300px;
+  width: 300px;
   margin: 10px;
+  display: flex;
+  align-items: center;
 }
 </style>
