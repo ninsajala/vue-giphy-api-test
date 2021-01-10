@@ -1,17 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>GIF</div>
+  <Results v-if="giphys.length" :giphys="giphys" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Results from './components/Results';
+import axios from 'axios';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    Results,
+  },
+  data() {
+    return {
+      giphys: [],
+      apiKey: 'OyIPKJHTAxK7m6BsXUMpIyfr1xHgwlmj',
+      searchInput: 'cats',
+    };
+  },
+  mounted() {
+    axios
+      .get(
+        `http://api.giphy.com/v1/gifs/search?q=${this.searchInput}&api_key=${this.apiKey}&limit=10`
+      )
+      .then((response) => {
+        this.giphys = response.data.data;
+      });
+  },
+};
 </script>
 
 <style>
